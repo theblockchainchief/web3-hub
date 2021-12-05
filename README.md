@@ -38,7 +38,7 @@ Put a readme in the folder with following details:
 - Steps to run the smart contract or script
 - Screenshots of output of the script or smart contract(All outputs of smart contracts functions
 not needed)
-You can refer this [Template]()
+You can refer this [Template](https://github.com/theblockchainchief/web3-hub/blob/main/Project_Details_Template.md)
 
 
 
