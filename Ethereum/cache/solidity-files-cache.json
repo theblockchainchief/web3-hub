@@ -1,41 +1,6 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/mnt/sda/CodeHall/repo/web3-hub/Ethereum/contracts/ERC20.sol": {
-      "lastModificationDate": 1641441986603,
-      "contentHash": "6cf7ae17046cdffb3ee78d03090ce482",
-      "sourceName": "contracts/ERC20.sol",
-      "solcConfig": {
-        "version": "0.8.7",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.3"
-      ],
-      "artifacts": [
-        "ERC20"
-      ]
-    },
     "/mnt/sda/CodeHall/repo/web3-hub/Ethereum/contracts/libraries/Base64.sol": {
       "lastModificationDate": 1641441618587,
       "contentHash": "26f9dcf88ed4b6d37ce96d1caf755cbe",
@@ -72,8 +37,8 @@
       ]
     },
     "/mnt/sda/CodeHall/repo/web3-hub/Ethereum/contracts/TextNFT.sol": {
-      "lastModificationDate": 1641442820453,
-      "contentHash": "80adff2fbfb4a4e4f4296a9c48ca1a78",
+      "lastModificationDate": 1641444545929,
+      "contentHash": "ae4f07d05d0fd6de9a437ed34ef9292f",
       "sourceName": "contracts/TextNFT.sol",
       "solcConfig": {
         "version": "0.8.7",
@@ -509,6 +474,41 @@
       ],
       "artifacts": [
         "IERC165"
+      ]
+    },
+    "/mnt/sda/CodeHall/repo/web3-hub/Ethereum/contracts/SupplyChain.sol": {
+      "lastModificationDate": 1641490203158,
+      "contentHash": "c602f21f113770887f2b05f44ce476b0",
+      "sourceName": "contracts/SupplyChain.sol",
+      "solcConfig": {
+        "version": "0.8.7",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.3"
+      ],
+      "artifacts": [
+        "SupplyChain"
       ]
     }
   }
