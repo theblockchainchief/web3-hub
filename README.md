@@ -28,7 +28,7 @@ Join Discord Group for any doubts or to engage with community: https://discord.g
 - Create an issue on topic which you want to work on
 - Ask 'mbcse' for assigning that issue to you by tagging like @mbcse
 - Fork the repo
--  a branch with name similar to what you are doing
+- Create a branch with name similar to what you are doing
 - Work on the issue and once done make a pull request following pull request template
 
 #### How to put my code in the folder:
