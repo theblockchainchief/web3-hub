@@ -1,4 +1,4 @@
-# Smart Contract ERC721
+# Smart Contract ERC-721
 
 ## Description
 
