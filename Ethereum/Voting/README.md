@@ -1,9 +1,9 @@
-Smart Contract ERC-721
+# Voting Smart Contract
 
 ## Description
 
-It is a simple ERC721 Smart Contract.
-ERC-721 tokens are non-fungible, each and every ERC-721 token has its own unique value and is to be treated individually.
+It is a simple Voting Smart Contract.
+It allows users to vote, a user can only vote once and it takes 1 ether to vote. We can also see the vote count in it.
 
 ## How this is build
 
@@ -22,4 +22,5 @@ I have used following tech stacks:-
 To run it, we just have to copy the smart contract into [Remix ide](https://remix.ethereum.org/), remix automatically compiles the contract. Then we have to just deploy our smart contract.
 
 ## Output Screenshots
-![erc721](https://user-images.githubusercontent.com/95535448/187703743-77e51e02-d895-4d46-9947-639df1bc9893.png)
+
+![voting](https://user-images.githubusercontent.com/95535448/188369469-7cd43406-4342-46aa-b68e-f8e2a4fb19f8.png)
