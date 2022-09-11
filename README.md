@@ -1,7 +1,6 @@
 
 <h1 align="center">Web3-Hub</h1>
 
-
 Welcome to web3-hub repository. You will find all kinds of ready to use smart contracts and web3 scripts for your blockchain projects. The aim of this 
 open source project is to make developer life easy by making tools, contracts and scripts for them.
 Contribute your knoweldge to this repo and help web3 drive the future!!
