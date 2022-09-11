@@ -1,11 +1,29 @@
 
-# Web3-Hub
+<h1 align="center">Web3-Hub</h1>
+
 
 Welcome to web3-hub repository. You will find all kinds of ready to use smart contracts and web3 scripts for your blockchain projects. The aim of this 
 open source project is to make developer life easy by making tools, contracts and scripts for them.
 Contribute your knoweldge to this repo and help web3 drive the future!!
 
+<div align="center">
+<p>
 
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+![GitHub forks](https://img.shields.io/github/forks/theblockchainchief/web3-hub)
+![GitHub Repo stars](https://img.shields.io/github/stars/theblockchainchief/web3-hub)
+![GitHub contributors](https://img.shields.io/github/contributors/theblockchainchief/web3-hub)
+
+![GitHub repo size](https://img.shields.io/github/repo-size/theblockchainchief/web3-hub)
+
+![Github](https://img.shields.io/github/license/theblockchainchief/web3-hub)
+![GitHub issues](https://img.shields.io/github/issues/theblockchainchief/web3-hub)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/theblockchainchief/web3-hub)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/theblockchainchief/web3-hub)
+
+</p>
+</div>
 
 ## Available tools and scritps
 
