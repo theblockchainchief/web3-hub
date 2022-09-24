@@ -1,34 +1,51 @@
-pragma solidity ^0.8.12;
+// SPDX-License-Identifier: GPL-2.0-or-later
 
-import "@openzeppelin/contracts/utils/Strings.sol";
+pragma solidity ^0.8.7;
 
-contract Voting {
+/*
+    1. One account can vote only once.
+    2. Voter has to send 1 ether to vote.
+    3. Make sure ethers don't stay locked in the contract.
+    4. Contract stages.
+*/
+contract VotingApp {
+    address payable owner;
+    mapping (address => bool) hasVoted;
+    uint votingFee = 1 ether;
+    enum VotingStages { OPEN, CLOSED }
+    VotingStages votingStage = VotingStages.CLOSED;
 
-    address payable owner; // contract creator's address
+    event logger(uint value);
 
     constructor() {
-        owner = payable(msg.sender); // setting the contract creator
-    }
-
-    mapping (address => uint) public voteCount;
-
-    function viewContractBalance() public view returns(uint)    {
-        return address(this).balance;
-    }
-
-    function accept() public payable {
-        
-        // Error out if anything other than 1 ether is sent
-        require(msg.value == 1 ether, string.concat("please send 1 ether, not ", Strings.toString(msg.value)));
-
+        owner = payable(msg.sender);
     }
 
     function vote() public payable {
-
-         //each account votes only once
-        require(voteCount[msg.sender] < 1, string.concat("You are  allowed to vote only once!"));
-
-        accept();
-
-        voteCount[msg.sender]++;
+        require(votingStage == VotingStages.OPEN, "Voting is closed!");
+        require(hasVoted[msg.sender] == false, "You have already voted!");
+        require(msg.value >= votingFee, "Need to send 1 ETH to vote!");
+        hasVoted[msg.sender] = true;
     }
+
+    function getFunds() public view returns(uint) {
+        require(msg.sender == owner, "Not Authorized!"); 
+        return address(this).balance;
+    }
+
+    function withdrawFunds(uint _amount) public {
+        require(msg.sender == owner, "Not Authorized!"); 
+        require(_amount <= address(this).balance, "Insufficient Funds!"); 
+        owner.transfer(_amount);
+    }
+
+    function openVoting() public {
+        require(msg.sender == owner, "Not Authorized!"); 
+        votingStage = VotingStages.OPEN;
+    }
+
+    function closeVoting() public {
+        require(msg.sender == owner, "Not Authorized!"); 
+        votingStage = VotingStages.CLOSED;
+    }
+}
