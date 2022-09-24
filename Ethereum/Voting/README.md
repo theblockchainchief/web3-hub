@@ -23,4 +23,5 @@ To run it, we just have to copy the smart contract into [Remix ide](https://remi
 
 ## Output Screenshots
 
-![voting](https://user-images.githubusercontent.com/95535448/188369469-7cd43406-4342-46aa-b68e-f8e2a4fb19f8.png)
+
+![voting](https://user-images.githubusercontent.com/95535448/192086442-ae9f83c5-c319-4d01-841f-bc301aad7dbc.png)
