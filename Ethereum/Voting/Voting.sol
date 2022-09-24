@@ -2,12 +2,6 @@
 
 pragma solidity ^0.8.7;
 
-/*
-    1. One account can vote only once.
-    2. Voter has to send 1 ether to vote.
-    3. Make sure ethers don't stay locked in the contract.
-    4. Contract stages.
-*/
 contract VotingApp {
     address payable owner;
     mapping (address => bool) hasVoted;
