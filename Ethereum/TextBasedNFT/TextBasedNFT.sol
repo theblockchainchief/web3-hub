@@ -3,7 +3,7 @@
 pragma solidity ^0.8.7;
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 
-contract SSOC is ERC721 {
+contract TextBasedNFT is ERC721 {
     uint256 private s_tokenIdCounter;
 
     // Event to be emitted when nft minted
